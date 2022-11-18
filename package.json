@@ -1,0 +1,20 @@
+{
+  "name": "projetointegrador",
+  "version": "1.0.0",
+  "description": "Projeto Integrador II",
+  "main": ".",
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergioadjr/Projeto-Integrador-II.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergioadjr/Projeto-Integrador-II/issues"
+  },
+  "homepage": "https://github.com/Sergioadjr/Projeto-Integrador-II#readme",
+  "keywords": []
+}
