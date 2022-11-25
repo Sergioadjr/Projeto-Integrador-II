@@ -15,28 +15,65 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <title>Cadastro</title>
 </head>
 
-<body>
+<body style="background-color:rgba(234, 228, 231, 1);">
     <header class="cabecalho">
-        <h1 class="cabecalho__titulo text-center">
+        <h1 class="cabecalho__titulo text-center mt-5">
             Cadastro de Usuário
         </h1>
     </header>
 
     <main class="conteudo">
-
         <form action="" class="formulario__cadastro" onsubmit="retornarSucesso(event)">
             <div class="cadastro_1">
-                <h2 class="titulo__cadastro">Dados Pessoais</h2>
+                <h2 class="titulo__cadastro mt-3 ms-3">Dados Pessoais</h2>
+
+                <div class="ms-3 row-cols-auto">
+                    <div class="mt-3">
+                        <label class="nome__label" for="nome">Nome Completo:</label>
+                        <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
+                        <span class="alerta__nome"></span>
+                    </div>
+
+                    <div class="mt-2 ">
+                        <label class="nome__label" for="cpf">CPF:</label>
+                        <input class="formulario__cadastro__campo campoCPF" required type="text" id="cpf">
+                        <span class="alerta__nome"></span>
+                    </div>
+
+                    <div class="mt-2 ">
+                        <label class="nome__label" for="data">Data de Nascimento:</label>
+                        <input class="formulario__cadastro__campo campoData" required type="date" id="data">
+                        <span class="alerta__data "></span>
+                    </div>
+
+                    <div class="mt-2 ">
+                        <label class="nome__label" for="genero">Gênero:</label>
+                        <select class="form-select formulario__cadastro__campo" required
+                            aria-label="Default select example" style="font-size: 12px;">
+                            <option value="1">Feminino</option>
+                            <option value="2">Masculino</option>
+                            <option value="3">Não binário</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="formulario__foto">
+                </div>
+                <a class="formulario__editar__foto" href="">Editar foto</a>
+                <a class="conteudo__cadastrar--link" id="botao__proximo" href="#">Próximo </a>
+                <a href="/menu.html" class="botao__voltar">Voltar</a>
+
+            </div>
 
 
+            <!-- 
 
-
-
-
+VERIFICAR INTERESSE ( APAGAR )
 
 
                 <p id="myP1">This is some text.</p>
@@ -55,6 +92,7 @@
                     }
                 </script>
 
+ -->
 
 
 
@@ -74,64 +112,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <label class="nome__label" for="nome">Nome da criança</label>
-                <input class="formulario__cadastro__campo campoNome" required type="name" id="nome">
-                <span class="alerta__nome"></span>
-
-                <label class="nome__label" for="date">Data de Nascimento:</label>
-                <input class="formulario__cadastro__campo campoData" required type="date" id="date">
-                <span class="alerta__data "></span>
-
-                <label class="nome__label" for="gender">Gênero:</label>
-                <select class="form-select formulario__cadastro__campo" required aria-label="Default select example">
-                    <option value="1">Feminino</option>
-                    <option value="2">Masculino</option>
-                    <option value="3">Não binário</option>
-                </select>
-
-                <label class="nome__label" for="apelido">Apelido (opcional)</label>
-                <input class="formulario__cadastro__campo" type="name" id="apelido">
-
-                <div class="formulario__foto">
-                </div>
-                <a class="formulario__editar__foto" href="">Editar foto</a>
-                <a class="conteudo__cadastrar--link" id="botao__proximo" href="#">Próximo </a>
-                <a href="/menu.html" class="botao__voltar">Voltar</a>
-            </div>
 
 
 
@@ -175,11 +155,11 @@
     <footer class="rodape">
         <p class="link__rodape" href="#"> Editar cadastro</p>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
         </script>
-    <script src="/js/validarCpf.js"></script>
+    <script src="/js/validaCpf.js"></script>
     <script src="/js/validaEmail.js"></script>
     <script src="/js/validaNome.js"></script>
     <script src="/js/validaSenha.js"></script>
