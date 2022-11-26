@@ -83,3 +83,17 @@ body {
 .botaoVoltar:hover{
   color: white;
 }
+
+.botaoFinalizarCadastro{
+  border-radius: 2rem;
+  padding: 2px 15px;
+  margin: 5px;
+  background-color:rgb(116, 9, 84);
+  color: white;
+  text-decoration: none;
+}
+
+.selectEstado{
+padding: auto;
+
+}
