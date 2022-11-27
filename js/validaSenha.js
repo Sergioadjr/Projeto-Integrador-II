@@ -1,20 +1,17 @@
-let campoSenha = document.querySelector("#senha");
+let campoSenha = document.querySelector("#campo_senha");
 let campoConfirmacaoSenha = document.querySelector("#confirmacao_senha")
 
 
-function validarConfirmacaoSenha(){
+function validaSenha(){
     let alerta = document.querySelector(".alerta__senha");
-    console.log(senha);
     if ((campoSenha.value) != campoConfirmacaoSenha.value) {
-        alerta.textContent = "Parece que senhas não conferem";
+        alerta.textContent = "Há divergência nas senhas informadas.";
         alerta.classList.add("sucesso");
         alerta.classList.add("erro");
-        return true
+        return true;
     } else {
-        alerta.textContent = "pode seguir adiante, tudo certo!";
         alerta.classList.remove("erro");
         alerta.classList.add("sucesso");
-        return false
-
+        return false;
     }
 }

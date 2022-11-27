@@ -42,8 +42,8 @@
 
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="cpf">CPF:</label>
-                        <input class="formulario__input" required type="text" id="cpf">
-                        <span class="alerta__nome"></span>
+                        <input class="formulario__input" required type="number" id="cpf">
+                        <span class="alerta__cpfInvalido"></span>
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
@@ -79,8 +79,8 @@
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
-                        <label class="mt-2 d-flex flex-column" for="senha">Senha:</label>
-                        <input class="formulario__input" required type="password" id="senha">
+                        <label class="mt-2 d-flex flex-column" for="campo_senha">Senha:</label>
+                        <input class="formulario__input" required type="password" id="campo_senha">
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
@@ -147,7 +147,7 @@
                     </div>
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="informar_endereco_complemento">Complemento:</label>
-                        <input class="formulario__input" type="text" id="Logradouro">
+                        <input class="formulario__input" type="text" id="Complemento">
                     </div>
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="informar_endereco_cep">CEP:</label>
@@ -166,12 +166,9 @@
                 <div class="align-self-center mt-3">
                     <a href="/cadastro.html" class="botaoVoltar botao__voltar">Retornar</a>
                     <!-- NECESSÁRIO VERIFICAR A FUNCIONALDIADE PARA "RETORNAR" - FAZER VIA JS -->
-                    <a class="botaoFinalizarCadastro mt-2 ms-2" id="botao__finalizar__cadastro">Finalizar</a>
+                    <a class="botaoFinalizarCadastro mt-2 ms-2" id="botao__finalizar">Finalizar</a>
                 </div>
 
-
-                <button class="formulario__cadastro__botao botaoConfirmar" type="submit">Confirmar</button>
-                <a href="#" class="botao__voltar" id="botao__voltar">Voltar</a>
             </div>
         </form>
 

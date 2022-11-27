@@ -1,7 +1,7 @@
-let cpf = document.querySelector(".campoCpf");
+let cpf = document.querySelector("#cpf");
 
 function validaCpf() {
-    let mensagem = document.querySelector(".alerta__cpf");
+    let mensagem = document.querySelector(".alerta__cpfInvalido");
     if (valida(cpf.value)) {
         mensagem.textContent ="Cpf válido";
         mensagem.classList.remove("erro");
