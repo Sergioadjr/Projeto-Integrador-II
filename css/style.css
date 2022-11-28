@@ -92,3 +92,21 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.botaoLogar{
+  border-radius: 2rem;
+  padding: 2px 15px;
+  margin: 5px;
+  background-color:rgb(116, 9, 84);
+  color: white;
+  text-decoration: none;
+}
+
+.login{
+  text-align: center;
+}
+
+.campoLogar{
+  border-radius: 2rem;
+  max-width: 350px;
+}
