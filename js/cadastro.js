@@ -5,7 +5,7 @@ let campoCpf = document.querySelector("#cpf");
 let botaoFinalizar = document.querySelector("#botao__finalizar");
 
 botaoProximo.addEventListener("click", function(){
-    if ( validaNome() && validaCpf() && validaSenha() && validaEmail()) {
+    if ( validaNome() && validaCpf() && validaEmail() && validaSenha()) {
         
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");
