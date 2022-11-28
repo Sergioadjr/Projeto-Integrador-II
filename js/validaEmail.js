@@ -8,10 +8,10 @@ function validaEmail(){
         alerta.textContent = "Há divergência nos e-mails informados.";
         alerta.classList.add("sucesso");
         alerta.classList.add("erro");
-        return true;
+        return false;
     } else {
         alerta.classList.remove("erro");
         alerta.classList.add("sucesso");
-        return false;
+        return true;
     }
 }
