@@ -124,3 +124,8 @@ body {
   color: white;
   text-decoration: none;
 }
+.imagemPerfil{
+  border-radius: 100rem;
+  max-width: 150px;
+  margin: auto;
+}
