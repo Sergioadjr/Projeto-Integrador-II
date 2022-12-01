@@ -129,3 +129,15 @@ body {
   max-width: 150px;
   margin: auto;
 }
+
+.card-text-balada{
+  font-size: 12px;
+}
+
+/* .temperaturaQuente{
+filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);;
+}
+.temperaturaFria{
+filter: blur(0px) brightness(100%) contrast(100%) drop-shadow(3px 3px 1px #00b3ff) grayscale(0%) hue-rotate(50deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
+} */
+
